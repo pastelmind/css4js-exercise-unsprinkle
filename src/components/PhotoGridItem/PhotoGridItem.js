@@ -64,20 +64,22 @@ const Image = styled.img`
 `;
 
 const Tags = styled.ul`
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: flex;
+  gap: 8px;
 `;
 
 const Tag = styled.li`
-  display: inline;
-  margin-right: 8px;
+  white-space: nowrap;
   padding: 4px 8px;
   background: var(--color-gray-300);
   font-size: 0.875rem;
   font-weight: 475;
   color: var(--color-gray-800);
+
+  :last-of-type {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 `;
 
 export default PhotoGridItem;
