@@ -23,6 +23,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
             `}
           />
           <Image
+            alt={alt}
             src={src}
             srcSet={`
               ${src} 1x,

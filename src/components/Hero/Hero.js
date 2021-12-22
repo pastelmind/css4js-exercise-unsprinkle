@@ -22,6 +22,7 @@ const Hero = () => {
           "
         />
         <HeroImage
+          alt=""
           src="/images/hero-img.jpg"
           srcSet="
             /images/hero-img.jpg 1x,
